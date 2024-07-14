@@ -47,11 +47,7 @@ const images = [
 ];
 
 
-// const instance = basicLightbox.create(`
-//     <img src="https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg">
-// `)
 
-// instance.show()
 
 const galleryContainer = document.querySelector('.js-gallery');
 
@@ -87,7 +83,7 @@ function onGalleryItemClick(event) {
   const instance = basicLightbox.create(`
     <img src="${originalImageURL}" width="800" height="600">
   `);
-
+console.log(`original-link: ${originalImageURL}`);
   instance.show();
 }
 
